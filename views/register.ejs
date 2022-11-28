@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/main/styles.css" />
+    <link rel="stylesheet" href="/forms/forms.css" />
+    <title><%= pageTitle %></title>
+  </head>
+  <body>
+    <header><%- include("../views/includes/nav.ejs") %></header>
+    <main>
+      <div id="content">
+        <h1>Crear cuenta de orientador</h1>
+        <div class="form-container">
+          <form action="/register" method="post" autocomplete="off">
+            <div class="form-control">
+              <label for="name">Area de orientación</label>
+              <input name="name" type="text" />
+            </div>
+            <div class="form-control">
+              <label for="orgId">Codigo de udg</label>
+              <input name="orgId" type="text" />
+            </div>
+            <div class="form-control">
+              <label for="password">Contrseña</label>
+              <input name="password" type="password" />
+            </div>
+            <div class="form-control">
+              <label for="confirmPassword">Confirmar Contraseña</label>
+              <input name="confirmPassword" type="password" />
+            </div>
+            <input type="hidden" name="_csrf" value="<%=csrfToken %>" />
+            <button class="btn" type="submit">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

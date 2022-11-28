@@ -1,0 +1,56 @@
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+      </a>
+      <img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t39.30808-6/316671731_925861238381588_1586047284356844213_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=wYyLXmEOuO4AX8vbZBw&_nc_ht=scontent.fgdl3-1.fna&oh=00_AfCjuOm8cY27IHXCSpHaLPaQsVaaP325VVe6P6wONuW3bQ&oe=6388F3BB" alt="" width="150px">
+      <p class="text-muted">&copy; ORIENTACION EDUCATIVA TPSI 7B TM - 2022</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Mapa del sitio</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted">Inicio</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nosotros</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas</a></li>
+        <li class="nav-item mb-2"><a href="/schedule/profile" class="nav-link p-0 text-muted">Crear cita</a></li>
+        <li class="nav-item mb-2"><a href="mailto:paulina.grodriguez@academicos.udg.mx?Subject=Dudas%20Sobre%20Orientación%20Educativa" class="nav-link p-0 text-muted">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Red UDG</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="https://www.udg.mx/es/nuestra/presentacion/mision-vision" class="nav-link p-0 text-muted">Mision y Vision</a></li>
+        <li class="nav-item mb-2"><a href="https://www.udg.mx/es/directorio" class="nav-link p-0 text-muted">Directorio</a></li>
+        <li class="nav-item mb-2"><a href="https://www.udg.mx/es/normatividad" class="nav-link p-0 text-muted">Normatividad</a></li>
+        <li class="nav-item mb-2"><a href="http://www.escolar.udg.mx/aspirantes/registro-de-tramites" class="nav-link p-0 text-muted">Registro de Tramites</a></li>
+        <li class="nav-item mb-2"><a href="http://tramitepi.escolar.udg.mx/SeguimientoPI/" class="nav-link p-0 text-muted">Seguimiento de Tramites</a></li>
+        <li class="nav-item mb-2"><a href="http://www.escolar.udg.mx/aspirantes/documentacion" class="nav-link p-0 text-muted">Documentacion requerida</a></li>
+        <li class="nav-item mb-2"><a href="http://www.escolar.udg.mx/aspirantes/calendarios" class="nav-link p-0 text-muted">Calendarios</a></li>
+
+
+      </ul>
+    </div>
+    <% if (!isAuthenticated) { %>
+        <div class="col mb-3">
+            <h5>Usuario</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/login" class="nav-link p-0 text-muted">Iniciar Sesion</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Volver hacia arriba</a></li>
+      </ul>
+        </div>
+    
+    <% } else { %>
+        <div class="col mb-3">
+            <h5>Usuario</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="/schedule/" class="nav-link p-0 text-muted">Agendar Cita</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cerrar Sesion</a></li>
+            </ul>
+          </div>
+        <% } %>
+  </footer>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="este es el sitio de la atención a estudiantes por parte de la escuela politecnica de guadalajara" />
+    <meta
+      name="author"
+      content="Brayan barusta, kevin alejandro, omar"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title><%= pageTitle %></title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/carousel/"
+    />
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link
+      href="/docs/5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.2/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.2/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.2/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg"
+      color="#712cf9"
+    />
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico" />
+    <meta name="theme-color" content="#712cf9" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <link href="../public/main/carousel.css" rel="stylesheet" />
+  </head>
+  <script>
+    alert("Bienvenido a la pagina de orientación educativa :) ")
+  </script>
+  <body>
+    <header><%- include("../views/includes/nav.ejs") %></header>
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="bd-placeholder-img" width="100%" height="400px" src="https://sems.udg.mx/sites/default/files/bl307_regreso_clases_calendario2018b_credito_jonatan_orozco_1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1><%= msg %></h1>
+                <p>Estamos comprometidos a brindar elementos y recursos necesarios para que los estudiantes definan su vida.</p>
+                <p><a class="btn btn-lg btn-primary" href="/schedule/profile">Programar cita</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="400px" src="https://www.cetys.mx/noticias/wp-content/uploads/2022/05/Educacion-basica.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></i>
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>¿Necesitas ayuda?</h1>
+                <p>Ofrecemos este espacio virtual con la información para fomentar tu desarrollo integral.</p>
+                <p><a class="btn btn-lg btn-primary" href="/orientacion">Conocer areas de orientacion</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="400px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsLF-NvTEtLY4nCiy_4k9OEVCXPRv-hL_EZqoIVbqbOO_hCAVuNC6Y9oGo6KesEzRncz0&usqp=CAU" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Crea una cita ya.</h1>
+                <p>La manera mas sencilla de crear citas para atención a alumnos.</p>
+                <p><a class="btn btn-lg btn-primary" href="/login">Iniciar sesion</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      </div>
+      <br>
+      <br>
+    
+
+      
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              src="https://thumbs.dreamstime.com/b/caricatura-de-graduaci%C3%B3n-mortarboard-trencher-cap-boy-school-college-ilustraci%C3%B3n-vectorial-dibujo-la-en-estilo-dibujos-animados-224793399.jpg"
+              role="img"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Orientacion academica</title>
+              <rect width="100%" height="100%" fill="#777" />
+            </img>
+
+            <h2 class="fw-normal">Orientación Academica</h2>
+            <p>
+              Deberá generar acciones encaminadas a apoyar y eficientar el proceso de enseñanza aprendizaje.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">Saber mas. &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1200px-Circle-icons-computer.svg.png"
+              role="img"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+            </img>
+
+            <h2 class="fw-normal">Orientación vocacional</h2>
+            <p>
+              La orientación vocacional, está dirigida a quiénes están próximos a finalizar sus estudios de nivel medio superior e ingresar a la universidad.
+
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">Aprender mas &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              src="https://static.vecteezy.com/system/resources/previews/003/836/044/original/family-planning-red-flat-design-long-shadow-glyph-icon-husband-and-wife-raising-child-loving-mother-and-father-with-happy-daughter-kid-with-parents-silhouette-illustration-vector.jpg"
+              role="img"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+            </img>
+
+            <h2 class="fw-normal">Orientación familiar</h2>
+            <p>
+              La orientación familiar tiene como objetivo trabajar en conjunto con los padres de familia a nivel informativo y formativo para promover el desarrollo familiar a través de la toma de conciencia
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">Aprender mas &raquo;</a>
+            </p>
+          </div>
+        </div>
+ 
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              Descubre que te gusta
+              <span class="text-muted">Haz el test vocacional!</span>
+            </h2>
+            <p class="lead">
+              Si alguna vez haz dudado de a que te quieres dedicar no esperes mas, este test sencillo es para ti. Solo te tomara 5 minutos y te ayudara a orientarte con respecto a como continuar tus estudios universitarios!
+            </p>
+            <a href="http://guiadecarreras.udg.mx/test-de-orientacion-vocacional/test-rutas/">TOMAR TEST YA!</a>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              src="https://www.preparateparalavida.com/uploads/RESEM389seis-pasos-para-encotnrar-tu-vocacion.jpg"
+              role="img"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>TEST VOCACIONAL</title>
+              <rect width="100%" height="100%" fill="#eee" />
+
+            </img>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+              La pandemia fue larga 
+              <span class="text-muted">Aprende como mantenerte sano psicologicamente</span>
+            </h2>
+            <p class="lead">
+              Sin duda el aislamiento debido a la pandemia de COVID-19 resulto como uno de los eventos que mas nos ha separado como sociedad. Muchos estudiantes sufren las consecuencias del aislamiento, siendo afectados por la depresión y ansiedad. No estas solo, si necesitas ayuda da click <a href="https://www.udg.mx/es/noticia/udeg-con-atencion-psicologica-en-toda-la-red-para-la-poblacion-en-general">aqui</a>
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yc8WTay1l9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              El examen APA puede resultar aterrador. <span class="text-muted">Estudia para pasarlo.</span>
+            </h2>
+            <p class="lead">
+              Se acercan las fechas del examen de admisión, debes estar bien preparado para tu prueba de aptitudes academicas para asi continuar estudiando en la universidad de guadalajara. Te invitamos a que repases los conceptos mas importantes que pueden venir en el examen.
+            </p>
+            <a href="http://www.escolar.udg.mx/sites/default/files/PAA-Prueba-Practica.pdf">MIRAR GUIA COMPLETA DEL EXAMEN</a>
+          </div>
+          <div class="col-md-5">
+            <IMG
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              SRC="https://www.udg.mx/sites/default/files/img_noticias/180514_aspirantes_a_udeg_realizaran_examenes_de_admision_durante_los_proximos_sabados_ag_3.jpg"
+              role="img"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" />
+
+            </I>
+          </div>
+        </div>
+
+
+      </div>
+
+      <footer class="container">
+        <%- include("../views/includes/footer.ejs") %>
+      </footer>
+    </main>
+
+    <script
+      src="/docs/5.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
